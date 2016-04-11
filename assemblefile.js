@@ -62,7 +62,7 @@ site.task('watch:pages', function(){
 });
 
 site.task('watch:sections', function(){
-  site.watch(['./src/sections/*.md'], ['load', 'pages']);
+  site.watch(['./src/sections/**/*'], ['load', 'pages']);
 });
 
 /**

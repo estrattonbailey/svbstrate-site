@@ -12,6 +12,10 @@ module.exports = {
     {
       title: "Typography",
       content: "src/sections/typography.md"
+    },
+    {
+      title: "Buttons",
+      content: "src/sections/buttons.md"
     }
   ]
 }

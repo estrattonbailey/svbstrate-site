@@ -2,9 +2,17 @@
 @import "../../../svbstrate/src/_svbstrate.scss";
 
 .demo {
-  border: 1px solid $c-g2;
+  border: 1px solid $c-g1;
 
   & + .demo {
     border-top: 0;
   }
+}
+
+pre {
+  @extend .px-1;
+  @extend .p;
+  margin: 0;
+  border: 1px solid $c-g1;
+  border-top: 0;
 }
