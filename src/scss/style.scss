@@ -1,2 +1,10 @@
 // @import "../../node_modules/svbstrate/_svbstrate";
 @import "../../../svbstrate/src/_svbstrate.scss";
+
+.demo {
+  border: 1px solid $c-g2;
+
+  & + .demo {
+    border-top: 0;
+  }
+}

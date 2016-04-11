@@ -1118,3 +1118,8 @@ th,
   th:last-child, .no-padding
   .table__cell--styled:last-child {
     padding-right: 0; }
+
+.demo {
+  border: 1px solid #cccccc; }
+  .demo + .demo {
+    border-top: 0; }

@@ -8,10 +8,10 @@ module.exports = {
     keywords: "designer, developer",
     og_img: "/"
   },
-  projects: [
+  sections: [
     {
-      title: "Hello World",
-      caption: "src/sections/typography.md"
+      title: "Typography",
+      content: "src/sections/typography.md"
     }
   ]
 }
