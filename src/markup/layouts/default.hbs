@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="canonical" href="">
+
+  <meta name="author" content="{{meta.author}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="keywords" content="{{meta.description}}"/>
+  <meta name="description" content="{{meta.description}}"/>
+
+	<!-- Icons -->
+	<link rel="icon" type="image/png" href="assets/icons/favicon.png">
+
+	<!-- Open Graph data -->
+	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{meta.description}}"/>
+  <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="{{meta.description}}"/>
+  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{meta.title}}" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{meta.og_img}}" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{meta.url}}" />
+
+  <link rel="stylesheet" type="text/css" href="{{meta.url}}{{asset 'style.css'}}"/>
+
+  <title>{{meta.title}}</title>
+</head>
+<body class="{{#if body_classes}} {{body_classes}}{{/if}}">
+
+  {% body %}
+
+</body>
+</html>
