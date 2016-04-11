@@ -3,7 +3,7 @@ var site,
     rename = require('gulp-rename'),
     watch = require('base-watch'),
     rimraf = require('rimraf'),
-    helpers = require(__dirname+'/lib/helpers.js');
+    helpers = require('./lib/helpers.js');
 
 /**
  * Define Site
@@ -38,11 +38,11 @@ function cleanDest(){
   });
 }
 site.task('load', function(cb){
-  site.layouts(__dirname+'/src/markup/layouts/*.hbs');
+  site.layouts('./src/markup/layouts/*.hbs');
 
-  site.partials([__dirname+'/src/markup/modules/*.hbs', __dirname+'/src/markup/components/*.hbs']);
+  site.partials(['./src/markup/modules/*.hbs', './src/markup/components/*.hbs']);
 
-  site.pages(__dirname+'/src/markup/pages/*.hbs');
+  site.pages('./src/markup/pages/*.hbs');
 
   cleanDest();
 
@@ -54,15 +54,15 @@ site.task('pages', function(){
     .pipe(rename({
       extname: '.html'
     }))
-    .pipe(site.dest(__dirname+'/dist'));
+    .pipe(site.dest('./dist'));
 });
 
 site.task('watch:pages', function(){
-  site.watch([__dirname+'/src/markup/**/*.hbs'], ['pages']);
+  site.watch(['./src/markup/**/*.hbs'], ['load', 'pages']);
 });
 
 site.task('watch:sections', function(){
-  site.watch([__dirname+'/src/sections/*.md'], ['load', 'pages']);
+  site.watch(['./src/sections/*.md'], ['load', 'pages']);
 });
 
 /**
