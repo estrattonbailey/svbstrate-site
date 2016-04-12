@@ -10,6 +10,14 @@ module.exports = {
   },
   sections: [
     {
+      title: "Scale",
+      content: "src/sections/scale.md"
+    },
+    {
+      title: "Whitespace",
+      content: "src/sections/whitespace.md"
+    },
+    {
       title: "Typography",
       content: "src/sections/typography.md"
     },

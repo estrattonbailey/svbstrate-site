@@ -1,6 +1,10 @@
 // @import "../../node_modules/svbstrate/_svbstrate";
 @import "../../../svbstrate/src/_svbstrate.scss";
 
+a {
+  color: $c-theme;
+}
+
 .demo {
   border: 1px solid $c-g1;
 
@@ -14,5 +18,4 @@ pre {
   @extend .p;
   margin: 0;
   border: 1px solid $c-g1;
-  border-top: 0;
 }
