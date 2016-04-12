@@ -29,58 +29,285 @@
   <section class="pt-8 ph-2">
   <div class="container--s">
     <header class="clear">
-      <h1 class="f2 font-w-9 float-l">Svbstrate</h1>
-      <p class="c-theme float-r">v0.7.1</p>
+      <h1 class="h2 bold float-l">Svbstrate</h1>
+      <p class="c-theme float-r">v0.9.0</p>
     </header>
     <hr>
     <p class="mt-1">Svbstrate is a base set of atomic styles suitable for any project. What is here is easily configurable to suit your needs, and since it's built on SASS, it's easy to extend and build on.</p>
   </div>
 </section>
 
-  <section class="pv-8 ph-2">
+  <section class="pv-4 ph-2">
     <div class="container--s">
-      <h2 class="f2 font-w-5 mb-075">Typography</h2>
-      <p>Type is set in <code>rem</code> units and receives no default margin or padding. The type scale is easily applied via the <code>.f1</code> <code>.f2</code> <code>.f3</code> <code>.f4</code> <code>.f5</code> <code>.f6</code> and <code>.p</code> classes. To add whitespace, wrap your content in a <code>.text-content</code> class.
-<br>
-<br></p>
-<div class="demo px-2">
-  <div class="text-content">
-    <h1>Heading One</h1>
-    <h2>Heading Two</h2>
-    <h3>Heading Three</h3>
-    <h4>Heading Four</h4>
-    <h5>Heading Five</h5>
-    <h6>Heading Six</h6>
-  </div>
+      <h2 class="medium">Scale</h2>
+      <p>The type scale is very integral to the underlying uniformity of whitespace in this system. Elements influenced by typographical elements are scaled and spaced based on either <code>rem</code> or <code>em</code> according to the font size applied. By default, this includes all typography, lists, buttons, tables, and forms.</p>
+<p>With a base font size – 62.5% (10px) by default – relative units serve well as units of whitespace in most projects, all the while maintaining the uniformity of space we see in the type scale.</p>
+<div class="demo mt-2 px-2">
+  <h1>Heading One&nbsp;&nbsp;<span class="h6 c-g3 float-r">2.8rem</span></h1>
+  <h2>Heading Two&nbsp;&nbsp;<span class="h6 c-g3 float-r">1.8rem</span></h2>
+  <h3>Heading Three&nbsp;&nbsp;<span class="h6 c-g3 float-r">1.4rem</span></h3>
+  <h4>Heading Four&nbsp;&nbsp;<span class="h6 c-g3 float-r">1.1rem</span></h4>
+  <h5>Heading Five&nbsp;&nbsp;<span class="h6 c-g3 float-r">0.9rem</span></h5>
+  <h6>Heading Six&nbsp;&nbsp;<span class="h6 c-g3 float-r">0.8rem</span></h6>
 </div>
-<pre><code>&lt;div class=&quot;text-content&quot;&gt;
-  &lt;h1&gt;Heading One&lt;/h1&gt;
-  &lt;h2&gt;Heading Two&lt;/h2&gt;
-  &lt;h3&gt;Heading Three&lt;/h3&gt;
-  &lt;h4&gt;Heading Four&lt;/h4&gt;
-  &lt;h5&gt;Heading Five&lt;/h5&gt;
-  &lt;h6&gt;Heading Six&lt;/h6&gt;
-&lt;/div&gt;
+<pre><code>&lt;h1&gt;Heading One&lt;/h1&gt;
+&lt;h2&gt;Heading Two&lt;/h2&gt;
+&lt;h3&gt;Heading Three&lt;/h3&gt;
+&lt;h4&gt;Heading Four&lt;/h4&gt;
+&lt;h5&gt;Heading Five&lt;/h5&gt;
+&lt;h6&gt;Heading Six&lt;/h6&gt;
 </code></pre>
 
     </div>
   </section>
-  <section class="pv-8 ph-2">
+  <section class="pv-4 ph-2">
     <div class="container--s">
-      <h2 class="f2 font-w-5 mb-075">Buttons</h2>
-      <p>Buttons are sized using <code>em</code>, so creating different sized buttons is as easy as applying a different type scale class.
-<br>
-<br></p>
-<div class="demo px-2">
-  <button class="f2 font-t-u mv-05">Click Me</button>
-  <br>
-  <button class="f4 font-t-u mv-05">Click Me</button>
-  <br>
-  <button class="f6 font-t-u mv-05">Click Me</button>
+      <h2 class="medium">Whitespace</h2>
+      <p>Svbstrate includes whitespace classes out of the box, but these should be configured or removed on a per project basis. They use a syntax first developed by <a href="http://tachyons.io/">Tachyons</a> and <a href="http://www.basscss.com/">BASSCSS</a>:</p>
+<table class="mt-2 no-padding">
+  <tr>
+    <th class="bold">Prefix</th>
+    <th class="bold">Description</th>
+  </tr>
+  <tr>
+    <td>m</td>
+    <td>margin</td>
+  </tr>
+  <tr>
+    <td>p</td>
+    <td>padding</td>
+  </tr>
+  <tr>
+    <td>t</td>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>b</td>
+    <td>bottom</td>
+  </tr>
+  <tr>
+    <td>l</td>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>r</td>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>v</td>
+    <td>vertical</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>top, bottom, left, right</td>
+  </tr>
+  <tr>
+    <td>n</td>
+    <td>negative</td>
+  </tr>
+  <tr>
+    <th class="bold">Suffix</th>
+    <th class="bold">Scale</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0 (reset)</td>
+  </tr>
+  <tr>
+    <td>025</td>
+    <td>0.25em</td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td>0.5em</td>
+  </tr>
+  <tr>
+    <td>075</td>
+    <td>0.75em</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1em</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2em</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>4em</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>6em</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>8em</td>
+  </tr>
+</table>
+<p class="mt-4 mb-1">The prefixes and suffixes above combine to define classes like these:</p>
+<pre><code class="language-css">.mx-0 {
+  margin: 0; 
+}
+.mhn-2 {
+  margin-left: -2em; 
+  margin-right: -2em; 
+}
+
+pv-4 {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.pt-075 {
+  margin-top: 0.75em;  
+}
+</code></pre>
+
+    </div>
+  </section>
+  <section class="pv-4 ph-2">
+    <div class="container--s">
+      <h2 class="medium">Typography</h2>
+      <p>Type is set in <code>rem</code> units and receives no default margin or padding. The type scale is easily applied via the <code>.f1</code> <code>.f2</code> <code>.f3</code> <code>.f4</code> <code>.f5</code> <code>.f6</code> and <code>.p</code> classes. To add whitespace, wrap your content in a <code>.text-content</code> class.</p>
+<div class="demo px-2 mt-2">
+  <p class="bold">Bold</p>
+  <p class="medium">Medium</p>
+  <p class="light">Light</p>
+  <p class="italic">Italic</p>
+  <p class="uppercase">Caps</p>
+  <p><small>Small</small></p>
+  <p class="small">Small (class)</p>
+  <p class="underline">Underline</p>
+  <p class="decoration--none">No Decoration</p>
+  <p class="align-l">Left Alignment</p>
+  <p class="align-c">Center Alignment</p>
+  <p class="align-r">Right Alignment</p>
+  <p class="type--reset">Reset margin & line height</p>
 </div>
-<pre><code>&lt;button class=&quot;f2 font-t-u mv-05&quot;&gt;Click Me&lt;/button&gt;
-&lt;button class=&quot;f4 font-t-u mv-05&quot;&gt;Click Me&lt;/button&gt;
-&lt;button class=&quot;f6 font-t-u mv-05&quot;&gt;Click Me&lt;/button&gt;
+<pre><code>&lt;p class=&quot;bold&quot;&gt;Bold&lt;/p&gt;
+&lt;p class=&quot;medium&quot;&gt;Medium&lt;/p&gt;
+&lt;p class=&quot;light&quot;&gt;Light&lt;/p&gt;
+&lt;p class=&quot;italic&quot;&gt;Italic&lt;/p&gt;
+&lt;p class=&quot;uppercase&quot;&gt;Caps&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Small&lt;/small&gt;&lt;/p&gt;
+&lt;p class=&quot;small&quot;&gt;Small (class)&lt;/p&gt;
+&lt;p class=&quot;underline&quot;&gt;Underline&lt;/p&gt;
+&lt;p class=&quot;decoration--none&quot;&gt;No Decoration&lt;/p&gt;
+&lt;p class=&quot;align-l&quot;&gt;Left Alignment&lt;/p&gt;
+&lt;p class=&quot;align-c&quot;&gt;Center Alignment&lt;/p&gt;
+&lt;p class=&quot;align-r&quot;&gt;Right Alignment&lt;/p&gt;
+&lt;p class=&quot;type--reset&quot;&gt;Reset margin &amp; line height&lt;/p&gt;
+</code></pre>
+
+    </div>
+  </section>
+  <section class="pv-4 ph-2">
+    <div class="container--s">
+      <h2 class="medium">Buttons</h2>
+      <p>Buttons are sized using <code>em</code>, so creating different sized buttons is as easy as applying a different type scale class.</p>
+<div class="demo px-2 mt-2">
+  <button class="h2 uppercase mv-05">Click Me</button>
+  <br>
+  <button class="h4 uppercase mv-05">Click Me</button>
+  <br>
+  <button class="h6 uppercase mv-05">Click Me</button>
+</div>
+<pre><code>&lt;button class=&quot;h2 uppercase mv-05&quot;&gt;Click Me&lt;/button&gt;
+&lt;button class=&quot;h4 uppercase mv-05&quot;&gt;Click Me&lt;/button&gt;
+&lt;button class=&quot;h6 uppercase mv-05&quot;&gt;Click Me&lt;/button&gt;
+</code></pre>
+
+    </div>
+  </section>
+  <section class="pv-4 ph-2">
+    <div class="container--s">
+      <h2 class="medium">Widths</h2>
+      <p>Use utility width classes throughout your markup, or to define custom grids on the fly.</p>
+<div class="demo px-2 clear align-c">
+  <div class="col-3 px-1 mb-1 bg-c-g1 c-g">25%</div>
+  <div class="col-4 px-1 mv-1 bg-c-g2 c-w">33%</div>
+  <div class="col-6 px-1 mv-1 bg-c-g3 c-w">50%</div>
+  <div class="col-8 px-1 mv-1 bg-c-g c-w">67%</div>
+  <div class="col-9 px-1 mv-1 bg-c-b c-w">75%</div>
+  <div class="col-12 px-1 mt-1 bg-c-g c-w">100%</div>
+</div>
+<pre><code>&lt;div class=&quot;col-3 px-1 mb-1 bg-c-g1 c-g&quot;&gt;25%&lt;/div&gt;
+&lt;div class=&quot;col-4 px-1 mv-1 bg-c-g2 c-w&quot;&gt;33%&lt;/div&gt;
+&lt;div class=&quot;col-6 px-1 mv-1 bg-c-g3 c-w&quot;&gt;50%&lt;/div&gt;
+&lt;div class=&quot;col-8 px-1 mv-1 bg-c-g c-w&quot;&gt;67%&lt;/div&gt;
+&lt;div class=&quot;col-9 px-1 mv-1 bg-c-b c-w&quot;&gt;75%&lt;/div&gt;
+&lt;div class=&quot;col-12 px-1 mt-1 bg-c-g c-w&quot;&gt;100%&lt;/div&gt;
+</code></pre>
+
+    </div>
+  </section>
+  <section class="pv-4 ph-2">
+    <div class="container--s">
+      <h2 class="medium">Containers &amp; Grids</h2>
+      <p>There is no set grid defined in Svbstrate. Instead, use container classes, the clearfix utility, and column classes to define grids on the fly.</p>
+<div class="demo px-2 clear align-c col-12">
+  <div class="clear">
+  <div class="float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-3_l</div></div>
+  <div class="float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-3_l</div></div>
+  <div class="float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g3 c-w">col-6 col-3_l</div></div>
+  <div class="float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g c-w">col-6 col-3_l</div></div>
+  <div class="float-l mv-1 col-6 col-4_m"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-4_m</div></div>
+  <div class="float-l mv-1 col-6 col-4_m"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-4_m</div></div>
+  <div class="float-l mv-1 col-12 col-4_m"><div class="px-1 mx-0 bg-c-g3 c-w">col-12 col-4_m</div></div>
+  <div class="float-l mv-1 col-12 col-6_m"><div class="px-1 mx-0 bg-c-g1 c-g">col-12 col-6_m</div></div>
+  <div class="float-l mv-1 col-12 col-6_m"><div class="px-1 mx-0 bg-c-g2 c-w">col-12 col-6_m</div></div>
+  <div class="float-l mv-1 col-6 col-8_l"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-8_l</div></div>
+  <div class="float-l mv-1 col-6 col-4_l"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-4_l</div></div>
+  </div>
+</div>
+<pre><code>&lt;div class=&quot;col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;col-6 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;col-6 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;col-12 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;col-12 col-6_m float-l mv-1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;col-12 col-6_m float-l mv-1&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;col-6 col-8_l float-l mv-1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;col-6 col-4_l float-l mv-1&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p class="mt-2">To add a gutter, use spacing utilities, combined with a offset 'row' element:</p>
+<div class="demo px-2 clear align-c col-12">
+  <div class="mhn-1 clear">
+  <div class="ph-1 float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-3_l</div></div>
+  <div class="ph-1 float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-3_l</div></div>
+  <div class="ph-1 float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g3 c-w">col-6 col-3_l</div></div>
+  <div class="ph-1 float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g c-w">col-6 col-3_l</div></div>
+  <div class="ph-1 float-l mv-1 col-6 col-4_m"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-4_m</div></div>
+  <div class="ph-1 float-l mv-1 col-6 col-4_m"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-4_m</div></div>
+  <div class="ph-1 float-l mv-1 col-12 col-4_m"><div class="px-1 mx-0 bg-c-g3 c-w">col-12 col-4_m</div></div>
+  <div class="ph-1 float-l mv-1 col-12 col-6_m"><div class="px-1 mx-0 bg-c-g1 c-g">col-12 col-6_m</div></div>
+  <div class="ph-1 float-l mv-1 col-12 col-6_m"><div class="px-1 mx-0 bg-c-g2 c-w">col-12 col-6_m</div></div>
+  <div class="ph-1 float-l mv-1 col-6 col-8_l"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-8_l</div></div>
+  <div class="ph-1 float-l mv-1 col-6 col-4_l"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-4_l</div></div>
+  </div>
+</div>
+<pre><code>&lt;div class=&quot;mhn-1 clear&quot;&gt;
+  &lt;div class=&quot;ph-1 col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ph-1 col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ph-1 col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ph-1 col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ph-1 col-6 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ph-1 col-6 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ph-1 col-12 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ph-1 col-12 col-6_m float-l mv-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ph-1 col-12 col-6_m float-l mv-1&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ph-1 col-6 col-8_l float-l mv-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ph-1 col-6 col-4_l float-l mv-1&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
 
     </div>
