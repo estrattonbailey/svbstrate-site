@@ -22,8 +22,12 @@ Svbstrate includes whitespace classes out of the box, but these should be config
     <td>bottom</td>
   </tr>
   <tr>
-    <td>h</td>
-    <td>horizontal</td>
+    <td>l</td>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>r</td>
+    <td>right</td>
   </tr>
   <tr>
     <td>v</td>

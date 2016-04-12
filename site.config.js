@@ -1,6 +1,6 @@
 module.exports = {
   meta: {
-    version: "0.7.1",
+    version: "0.9.0",
     title: "Eric Bailey",
     url: "http://127.0.0.1:8080/",
     author: "@estrattonbailey",
@@ -24,6 +24,14 @@ module.exports = {
     {
       title: "Buttons",
       content: "src/sections/buttons.md"
+    },
+    {
+      title: "Widths",
+      content: "src/sections/widths.md"
+    },
+    {
+      title: "Containers & Grids",
+      content: "src/sections/grids.md"
     }
   ]
 }
