@@ -1,11 +1,11 @@
 module.exports = {
   meta: {
     version: "0.9.0",
-    title: "Eric Bailey",
-    url: "http://127.0.0.1:8080/",
+    title: "Svbstrate",
+    url: "http://estrattonbailey.com/svbstrate-site",
     author: "@estrattonbailey",
-    description: "Designer, developer",
-    keywords: "designer, developer",
+    description: "A simple, scalable CSS base-layer.",
+    keywords: "css, scss",
     og_img: "/"
   },
   sections: [
