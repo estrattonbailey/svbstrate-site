@@ -3,68 +3,95 @@
 <head>
 	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="canonical" href="">
+	<link rel="canonical" href="http://estrattonbailey.com/svbstrate-site">
 
   <meta name="author" content="@estrattonbailey">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="keywords" content="A simple, scalable CSS base-layer."/>
-  <meta name="description" content="A simple, scalable CSS base-layer."/>
+  <meta name="keywords" content="A simple, scalable SCSS base-layer."/>
+  <meta name="description" content="A simple, scalable SCSS base-layer."/>
 
 	<!-- Icons -->
 	<link rel="icon" type="image/png" href="assets/icons/favicon.png">
 
 	<!-- Open Graph data -->
-	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="A simple, scalable CSS base-layer."/>
-  <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="A simple, scalable CSS base-layer."/>
-  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Svbstrate" />
+	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="A simple, scalable SCSS base-layer."/>
+  <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="A simple, scalable SCSS base-layer."/>
+  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Svbstrate - A simble scalable SCSS base-layer." />
   <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/" />
   <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://estrattonbailey.com/svbstrate-site" />
 
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
 
-  <title>Svbstrate</title>
+  <title>Svbstrate - A simble scalable SCSS base-layer.</title>
 </head>
 <body class="">
 
-  <section class="pt-8 ph-2">
+  <section class="pt8 ph2">
   <div class="container--s">
     <header class="clear">
       <h1 class="h2 bold float-l">Svbstrate</h1>
       <p class="c-theme float-r">v0.9.0</p>
+      <hr>
+      <p class="mt1">Svbstrate is a base set of atomic styles suitable for any project. What is here is easily configurable to suit your needs, and since it's built on SASS, it's easy to extend and build on.</p>
     </header>
-    <hr>
-    <p class="mt-1">Svbstrate is a base set of atomic styles suitable for any project. What is here is easily configurable to suit your needs, and since it's built on SASS, it's easy to extend and build on.</p>
+    <h4 class="bold mt2 cg3">Table of Contents</h4>
+    <ul class="toc mb2 list--reset">
+        <li class="relative pv05">
+          <a href="#Scale" class="toc__link inline-relative"><h3 class="medium mx0">Scale</h3></a>
+        </li>
+        <li class="relative pv05">
+          <a href="#Whitespace" class="toc__link inline-relative"><h3 class="medium mx0">Whitespace</h3></a>
+        </li>
+        <li class="relative pv05">
+          <a href="#Display-&-Positioning" class="toc__link inline-relative"><h3 class="medium mx0">Display &amp; Positioning</h3></a>
+        </li>
+        <li class="relative pv05">
+          <a href="#Breakpoints" class="toc__link inline-relative"><h3 class="medium mx0">Breakpoints</h3></a>
+        </li>
+        <li class="relative pv05">
+          <a href="#Widths" class="toc__link inline-relative"><h3 class="medium mx0">Widths</h3></a>
+        </li>
+        <li class="relative pv05">
+          <a href="#Containers-&-Grids" class="toc__link inline-relative"><h3 class="medium mx0">Containers &amp; Grids</h3></a>
+        </li>
+        <li class="relative pv05">
+          <a href="#Typography" class="toc__link inline-relative"><h3 class="medium mx0">Typography</h3></a>
+        </li>
+        <li class="relative pv05">
+          <a href="#Buttons" class="toc__link inline-relative"><h3 class="medium mx0">Buttons</h3></a>
+        </li>
+    </ul>
   </div>
 </section>
 
-  <section class="pv-4 ph-2">
+  <section id="Scale" class="pv4 ph2">
     <div class="container--s">
       <h2 class="medium">Scale</h2>
       <p>The type scale is very integral to the underlying uniformity of whitespace in this system. Elements influenced by typographical elements are scaled and spaced based on either <code>rem</code> or <code>em</code> according to the font size applied. By default, this includes all typography, lists, buttons, tables, and forms.</p>
-<p>With a base font size – 62.5% (10px) by default – relative units serve well as units of whitespace in most projects, all the while maintaining the uniformity of space we see in the type scale.</p>
-<div class="demo mt-2 px-2">
-  <h1>Heading One&nbsp;&nbsp;<span class="h6 c-g3 float-r">2.8rem</span></h1>
-  <h2>Heading Two&nbsp;&nbsp;<span class="h6 c-g3 float-r">1.8rem</span></h2>
-  <h3>Heading Three&nbsp;&nbsp;<span class="h6 c-g3 float-r">1.4rem</span></h3>
-  <h4>Heading Four&nbsp;&nbsp;<span class="h6 c-g3 float-r">1.1rem</span></h4>
-  <h5>Heading Five&nbsp;&nbsp;<span class="h6 c-g3 float-r">0.9rem</span></h5>
-  <h6>Heading Six&nbsp;&nbsp;<span class="h6 c-g3 float-r">0.8rem</span></h6>
+<p>Relative units serve well as units of whitespace in most projects, all the while maintaining the uniformity of space we see in the type scale.</p>
+<div class="demo mt2 px2">
+  <h1>Heading One&nbsp;&nbsp;<span class="h6 cg3 float-r">2.8rem</span></h1>
+  <h2>Heading Two&nbsp;&nbsp;<span class="h6 cg3 float-r">1.8rem</span></h2>
+  <h3>Heading Three&nbsp;&nbsp;<span class="h6 cg3 float-r">1.4rem</span></h3>
+  <h4>Heading Four&nbsp;&nbsp;<span class="h6 cg3 float-r">1.1rem</span></h4>
+  <h5>Heading Five&nbsp;&nbsp;<span class="h6 cg3 float-r">0.9rem</span></h5>
+  <h6>Heading Six&nbsp;&nbsp;<span class="h6 cg3 float-r">0.8rem</span></h6>
 </div>
-<pre><code>&lt;h1&gt;Heading One&lt;/h1&gt;
-&lt;h2&gt;Heading Two&lt;/h2&gt;
-&lt;h3&gt;Heading Three&lt;/h3&gt;
-&lt;h4&gt;Heading Four&lt;/h4&gt;
-&lt;h5&gt;Heading Five&lt;/h5&gt;
-&lt;h6&gt;Heading Six&lt;/h6&gt;
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Heading One<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Heading Two<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Heading Three<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Heading Four<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Heading Five<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>Heading Six<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
 </code></pre>
 
     </div>
   </section>
-  <section class="pv-4 ph-2">
+  <section id="Whitespace" class="pv4 ph2">
     <div class="container--s">
       <h2 class="medium">Whitespace</h2>
       <p>Svbstrate includes whitespace classes out of the box, but these should be configured or removed on a per project basis. They use a syntax first developed by <a href="http://tachyons.io/">Tachyons</a> and <a href="http://www.basscss.com/">BASSCSS</a>:</p>
-<table class="mt-2 no-padding">
+<table class="mt2 no-padding">
   <tr>
     <th class="bold">Prefix</th>
     <th class="bold">Description</th>
@@ -103,11 +130,15 @@
   </tr>
   <tr>
     <td>n</td>
-    <td>negative</td>
+    <td>negative (margin only)</td>
   </tr>
   <tr>
     <th class="bold">Suffix</th>
     <th class="bold">Scale</th>
+  </tr>
+  <tr>
+    <td>a</td>
+    <td>auto (margin only)</td>
   </tr>
   <tr>
     <td>0</td>
@@ -146,31 +177,298 @@
     <td>8em</td>
   </tr>
 </table>
-<p class="mt-4 mb-1">The prefixes and suffixes above combine to define classes like these:</p>
-<pre><code class="language-css">.mx-0 {
-  margin: 0; 
+<p class="mt4 mb1">The prefixes and suffixes above combine to define classes like these:</p>
+<pre><code class="language-css"><span class="hljs-selector-class">.mx0</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; 
 }
-.mhn-2 {
-  margin-left: -2em; 
-  margin-right: -2em; 
+<span class="hljs-selector-class">.mhn2</span> {
+  <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">2em</span>; 
+  <span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">2em</span>; 
 }
 
-pv-4 {
-  padding-top: 4em;
-  padding-bottom: 4em;
+<span class="hljs-selector-class">.pv4</span> {
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">4em</span>;
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">4em</span>;
 }
-.pt-075 {
-  margin-top: 0.75em;  
+<span class="hljs-selector-class">.pt075</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0.75em</span>;  
 }
 </code></pre>
 
     </div>
   </section>
-  <section class="pv-4 ph-2">
+  <section id="Display-&-Positioning" class="pv4 ph2">
+    <div class="container--s">
+      <h2 class="medium">Display &amp; Positioning</h2>
+      <p>These classes exist to make it painless to add base properties to an element, so that it might accept further styling such as <code>margin</code> or <code>z-index</code>. They also consequently make it easier to read the HTML and know what piece does what.</p>
+<pre><code class="language-scss"><span class="hljs-comment">/** From _display.scss */</span>
+<span class="hljs-selector-class">.block</span> {
+    <span class="hljs-attribute">display</span>: block;
+}
+<span class="hljs-selector-class">.inline</span> {
+    <span class="hljs-attribute">display</span>: inline;
+}
+<span class="hljs-selector-class">.inline-block</span> {
+    <span class="hljs-attribute">display</span>: inline-block;
+}
+<span class="hljs-selector-class">.relative</span> {
+    <span class="hljs-attribute">position</span>: relative;
+}
+<span class="hljs-selector-class">.absolute</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+}
+<span class="hljs-selector-class">.fixed</span> {
+    <span class="hljs-attribute">position</span>: fixed;
+}
+<span class="hljs-selector-class">.static</span> {
+    <span class="hljs-attribute">position</span>: static;
+}
+<span class="hljs-selector-class">.block-relative</span> {
+    @<span class="hljs-keyword">extend</span> .block;
+    @<span class="hljs-keyword">extend</span> .relative;
+}
+<span class="hljs-selector-class">.inline-relative</span> {
+    @<span class="hljs-keyword">extend</span> .inline-block;
+    @<span class="hljs-keyword">extend</span> .relative;
+}
+<span class="hljs-selector-class">.block-fixed</span> {
+    @<span class="hljs-keyword">extend</span> .block;
+    @<span class="hljs-keyword">extend</span> .fixed;
+}
+<span class="hljs-selector-class">.block-absolute</span> {
+    @<span class="hljs-keyword">extend</span> .block;
+    @<span class="hljs-keyword">extend</span> .absolute;
+}
+</code></pre>
+
+    </div>
+  </section>
+  <section id="Breakpoints" class="pv4 ph2">
+    <div class="container--s">
+      <h2 class="medium">Breakpoints</h2>
+      <p>Breakpoints are defined as a SASS map, accessible via the <code>break()</code> function defined in <code>_breakpoints.scss</code>. You do not <em>need</em> to pass only predefined breakpoints to <code>break()</code>, however: the function accepts any integer.</p>
+<p>Once passed, the <code>break()</code> function converts the integer or defined breakpoint variable to <code>em</code> units via the <code>em()</code> function.</p>
+<pre><code class="language-scss"><span class="hljs-comment">/**
+ * From _breakpoints.scss
+ */</span>
+
+<span class="hljs-comment">// Default</span>
+<span class="hljs-variable">$breakpoints</span>: (
+    xs: <span class="hljs-number">399</span>,
+    s: <span class="hljs-number">600</span>,
+    m: <span class="hljs-number">850</span>,
+    l: <span class="hljs-number">1050</span>,
+    xl: <span class="hljs-number">1200</span>
+) !default;
+
+<span class="hljs-comment">// This function converts values to ems,</span>
+<span class="hljs-comment">// regardless of units.</span>
+@function em(<span class="hljs-variable">$value</span>) {
+    @<span class="hljs-keyword">if</span> (<span class="hljs-variable">$value</span>/<span class="hljs-number">1</span>) == <span class="hljs-variable">$value</span> {
+        @<span class="hljs-keyword">if</span> (unit(<span class="hljs-variable">$value</span>) == <span class="hljs-string">'px'</span>) {
+            <span class="hljs-variable">$unitless_value</span>: <span class="hljs-variable">$value</span>/<span class="hljs-number">1px</span>;
+            @return (<span class="hljs-variable">$unitless_value</span>/<span class="hljs-number">16</span>)*<span class="hljs-number">1em</span>;
+        } @<span class="hljs-keyword">else</span> if (unit(<span class="hljs-variable">$value</span>) == <span class="hljs-string">'pt'</span>) {
+            <span class="hljs-variable">$unitless_value</span>: <span class="hljs-variable">$value</span>/<span class="hljs-number">1pt</span>;
+            @return (<span class="hljs-variable">$unitless_value</span>/<span class="hljs-number">16</span>)*<span class="hljs-number">1em</span>;
+        } @<span class="hljs-keyword">else</span> {
+            @return (<span class="hljs-variable">$value</span>/<span class="hljs-number">16</span>)*<span class="hljs-number">1em</span>;
+        }
+    }
+    @<span class="hljs-keyword">warn</span> <span class="hljs-string">"em(#{$value}) is not a number."</span>;
+    @return null;
+}
+
+<span class="hljs-comment">// BREAKPOINT FUNCTION</span>
+<span class="hljs-comment">// This function can be used with min-width or</span>
+<span class="hljs-comment">// max-width queries, and converts the pixel</span>
+<span class="hljs-comment">// value breakpoint variables at the top of this</span>
+<span class="hljs-comment">// doc to ems for the rendered @media blocks.</span>
+<span class="hljs-comment">// If passed a pixel value, it simply converts</span>
+<span class="hljs-comment">// it to ems for use.</span>
+@function break(<span class="hljs-variable">$breakpoint</span>, <span class="hljs-variable">$min-width</span>: true) {
+    @<span class="hljs-keyword">if</span> map-has-key(<span class="hljs-variable">$breakpoints</span>, <span class="hljs-variable">$breakpoint</span>) {
+    @<span class="hljs-keyword">if</span> (<span class="hljs-variable">$min-width</span> == false) {
+      @return em(map-get(<span class="hljs-variable">$breakpoints</span>, <span class="hljs-variable">$breakpoint</span>) - 1);
+    } @<span class="hljs-keyword">else</span> {
+      @return em(map-get(<span class="hljs-variable">$breakpoints</span>, <span class="hljs-variable">$breakpoint</span>));
+    }
+    } @<span class="hljs-keyword">else</span> {
+    @<span class="hljs-keyword">if</span> (<span class="hljs-variable">$min-width</span> == false) {
+      @return em(<span class="hljs-variable">$breakpoint</span> - 1)
+    } @<span class="hljs-keyword">else</span> {
+      @return em(<span class="hljs-variable">$breakpoint</span>)
+    }
+  }
+    @<span class="hljs-keyword">warn</span> <span class="hljs-string">"Bad value (#{$breakpoint}) in function break(#{$breakpoint})."</span>;
+    @return <span class="hljs-string">'Check your break() declaration.'</span>;
+}
+</code></pre>
+<p>By default, Svbstrate uses <code>min-width</code> based media queries. To use <code>max-width</code>, pass the optional second parameter to the <code>break()</code> function to subtract a single unit from the initial integer value:</p>
+<pre><code class="language-scss">@<span class="hljs-keyword">media</span> (min-width: break(s)){
+  <span class="hljs-comment">/* styles */</span>
+}
+@<span class="hljs-keyword">media</span> (max-width: break(s, false)){
+  <span class="hljs-comment">/* styles */</span>
+}
+</code></pre>
+
+    </div>
+  </section>
+  <section id="Widths" class="pv4 ph2">
+    <div class="container--s">
+      <h2 class="medium">Widths</h2>
+      <p>Use utility width classes throughout your markup, or to define custom grids on the fly.</p>
+<div class="demo px2 clear align-c">
+  <div class="col-3 px1 mb1 bg-cg1 cg">25%</div>
+  <div class="col-4 px1 mv1 bg-cg2 cw">33%</div>
+  <div class="col-6 px1 mv1 bg-cg3 cw">50%</div>
+  <div class="col-8 px1 mv1 bg-cg cw">67%</div>
+  <div class="col-9 px1 mv1 bg-cb cw">75%</div>
+  <div class="col-12 px1 mt1 bg-cg cw">100%</div>
+</div>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-3"</span>&gt;</span>25%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>33%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6"</span>&gt;</span>50%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-8"</span>&gt;</span>67%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-9"</span>&gt;</span>75%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12"</span>&gt;</span>100%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+    </div>
+  </section>
+  <section id="Containers-&-Grids" class="pv4 ph2">
+    <div class="container--s">
+      <h2 class="medium">Containers &amp; Grids</h2>
+      <p>Containing and wrapping classes are minimal, and should be configured to your project.</p>
+<pre><code class="language-scss"><span class="hljs-comment">/** From _containers.scss */</span>
+<span class="hljs-selector-class">.container</span> {
+  @<span class="hljs-keyword">extend</span> .block-relative;
+  <span class="hljs-attribute">margin-left</span>: auto;
+  <span class="hljs-attribute">margin-right</span>: auto;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
+<span class="hljs-selector-class">.container--l</span> {
+  @<span class="hljs-keyword">extend</span> .container;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1400px</span>;
+}
+<span class="hljs-selector-class">.container--m</span> {
+  @<span class="hljs-keyword">extend</span> .container;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1200px</span>;
+}
+<span class="hljs-selector-class">.container--s</span> {
+  @<span class="hljs-keyword">extend</span> .container;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">900px</span>;
+}
+<span class="hljs-selector-class">.container--xs</span> {
+  @<span class="hljs-keyword">extend</span> .container;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">735px</span>;
+}
+</code></pre>
+<p class="mt2">Svbstrate uses a commonplace 12-column grid. Column classes like <code>col-6</code> add widths, and have breakpoint extensions like <code>col-4_m</code> to make responsive layouts easier. Add float classes <code>float-l</code> <code>float-r</code> depending on which direction you want your grid to flow. Use a wrapping element with <code>clear</code> to define a clearfix.</p>
+<div class="demo px2 clear align-c col-12">
+  <div class="clear">
+  <div class="float-l mv1 col-6 col-3_l"><div class="px1 mx0 bg-cg1 cg">col-6 col-3_l</div></div>
+  <div class="float-l mv1 col-6 col-3_l"><div class="px1 mx0 bg-cg2 cw">col-6 col-3_l</div></div>
+  <div class="float-l mv1 col-6 col-3_l"><div class="px1 mx0 bg-cg3 cw">col-6 col-3_l</div></div>
+  <div class="float-l mv1 col-6 col-3_l"><div class="px1 mx0 bg-cg cw">col-6 col-3_l</div></div>
+  <div class="float-l mv1 col-6 col-4_m"><div class="px1 mx0 bg-cg1 cg">col-6 col-4_m</div></div>
+  <div class="float-l mv1 col-6 col-4_m"><div class="px1 mx0 bg-cg2 cw">col-6 col-4_m</div></div>
+  <div class="float-l mv1 col-12 col-4_m"><div class="px1 mx0 bg-cg3 cw">col-12 col-4_m</div></div>
+  <div class="float-l mv1 col-12 col-6_m"><div class="px1 mx0 bg-cg1 cg">col-12 col-6_m</div></div>
+  <div class="float-l mv1 col-12 col-6_m"><div class="px1 mx0 bg-cg2 cw">col-12 col-6_m</div></div>
+  <div class="float-l mv1 col-6 col-8_l"><div class="px1 mx0 bg-cg1 cg">col-6 col-8_l</div></div>
+  <div class="float-l mv1 col-6 col-4_l"><div class="px1 mx0 bg-cg2 cw">col-6 col-4_l</div></div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6 col-3_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6 col-3_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6 col-3_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6 col-3_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6 col-4_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6 col-4_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-4_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-6_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-6_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6 col-8_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6 col-4_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p class="mt2">To add a gutter, use spacing utilities, combined with a offset 'row' element using a negative margin class like <code>mhn1</code>:</p>
+<div class="demo px2 clear align-c col-12">
+  <div class="mhn1 clear">
+  <div class="ph1 float-l mv1 col-6 col-3_l"><div class="px1 mx0 bg-cg1 cg">col-6 col-3_l</div></div>
+  <div class="ph1 float-l mv1 col-6 col-3_l"><div class="px1 mx0 bg-cg2 cw">col-6 col-3_l</div></div>
+  <div class="ph1 float-l mv1 col-6 col-3_l"><div class="px1 mx0 bg-cg3 cw">col-6 col-3_l</div></div>
+  <div class="ph1 float-l mv1 col-6 col-3_l"><div class="px1 mx0 bg-cg cw">col-6 col-3_l</div></div>
+  <div class="ph1 float-l mv1 col-6 col-4_m"><div class="px1 mx0 bg-cg1 cg">col-6 col-4_m</div></div>
+  <div class="ph1 float-l mv1 col-6 col-4_m"><div class="px1 mx0 bg-cg2 cw">col-6 col-4_m</div></div>
+  <div class="ph1 float-l mv1 col-12 col-4_m"><div class="px1 mx0 bg-cg3 cw">col-12 col-4_m</div></div>
+  <div class="ph1 float-l mv1 col-12 col-6_m"><div class="px1 mx0 bg-cg1 cg">col-12 col-6_m</div></div>
+  <div class="ph1 float-l mv1 col-12 col-6_m"><div class="px1 mx0 bg-cg2 cw">col-12 col-6_m</div></div>
+  <div class="ph1 float-l mv1 col-6 col-8_l"><div class="px1 mx0 bg-cg1 cg">col-6 col-8_l</div></div>
+  <div class="ph1 float-l mv1 col-6 col-4_l"><div class="px1 mx0 bg-cg2 cw">col-6 col-4_l</div></div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mhn1 clear"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-6 col-3_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-6 col-3_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-6 col-3_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-6 col-3_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-6 col-4_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-6 col-4_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-12 col-4_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-12 col-6_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-12 col-6_m float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-6 col-8_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ph1 col-6 col-4_l float-l mv1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p><h3 class="medium mt2">Clearing Floats</h3></p>
+<p>Breakpoint based <code>clear</code> classes are also available to clear floats as needed.</p>
+<pre><code class="language-css"><span class="hljs-comment">/** Compiled output */</span>
+<span class="hljs-selector-class">.clear-l</span> {
+  <span class="hljs-attribute">clear</span>: left; 
+}
+@<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">24.9375em</span>) {
+  <span class="hljs-selector-class">.clear-l_xs</span> {
+    <span class="hljs-attribute">clear</span>: left; 
+  }
+}
+@<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">37.5em</span>) {
+  <span class="hljs-selector-class">.clear-l_s</span> {
+    <span class="hljs-attribute">clear</span>: left; 
+  } 
+}
+@<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">53.125em</span>) {
+  <span class="hljs-selector-class">.clear-l_m</span> {
+    <span class="hljs-attribute">clear</span>: left; 
+  } 
+}
+@<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">65.625em</span>) {
+  <span class="hljs-selector-class">.clear-l_l</span> {
+    <span class="hljs-attribute">clear</span>: left; 
+  } 
+}
+@<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">75em</span>) {
+  <span class="hljs-selector-class">.clear-l_xl</span> {
+    <span class="hljs-attribute">clear</span>: left; 
+  } 
+}
+</code></pre>
+
+    </div>
+  </section>
+  <section id="Typography" class="pv4 ph2">
     <div class="container--s">
       <h2 class="medium">Typography</h2>
-      <p>Type is set in <code>rem</code> units and receives no default margin or padding. The type scale is easily applied via the <code>.f1</code> <code>.f2</code> <code>.f3</code> <code>.f4</code> <code>.f5</code> <code>.f6</code> and <code>.p</code> classes. To add whitespace, wrap your content in a <code>.text-content</code> class.</p>
-<div class="demo px-2 mt-2">
+      <p>Type is set in <code>rem</code> units and receives no default margin or padding. The type scale is easily applied via the <code>.f1</code> <code>.f2</code> <code>.f3</code> <code>.f4</code> <code>.f5</code> <code>.f6</code> and <code>.p</code> classes. To reset the default whitespace, use the <code>.type--reset</code> utility class.</p>
+<div class="demo px2 mt2">
   <p class="bold">Bold</p>
   <p class="medium">Medium</p>
   <p class="light">Light</p>
@@ -185,129 +483,37 @@ pv-4 {
   <p class="align-r">Right Alignment</p>
   <p class="type--reset">Reset margin & line height</p>
 </div>
-<pre><code>&lt;p class=&quot;bold&quot;&gt;Bold&lt;/p&gt;
-&lt;p class=&quot;medium&quot;&gt;Medium&lt;/p&gt;
-&lt;p class=&quot;light&quot;&gt;Light&lt;/p&gt;
-&lt;p class=&quot;italic&quot;&gt;Italic&lt;/p&gt;
-&lt;p class=&quot;uppercase&quot;&gt;Caps&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;Small&lt;/small&gt;&lt;/p&gt;
-&lt;p class=&quot;small&quot;&gt;Small (class)&lt;/p&gt;
-&lt;p class=&quot;underline&quot;&gt;Underline&lt;/p&gt;
-&lt;p class=&quot;decoration--none&quot;&gt;No Decoration&lt;/p&gt;
-&lt;p class=&quot;align-l&quot;&gt;Left Alignment&lt;/p&gt;
-&lt;p class=&quot;align-c&quot;&gt;Center Alignment&lt;/p&gt;
-&lt;p class=&quot;align-r&quot;&gt;Right Alignment&lt;/p&gt;
-&lt;p class=&quot;type--reset&quot;&gt;Reset margin &amp; line height&lt;/p&gt;
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bold"</span>&gt;</span>Bold<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"medium"</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"light"</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"italic"</span>&gt;</span>Italic<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uppercase"</span>&gt;</span>Caps<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small"</span>&gt;</span>Small (class)<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"underline"</span>&gt;</span>Underline<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"decoration--none"</span>&gt;</span>No Decoration<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-l"</span>&gt;</span>Left Alignment<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-c"</span>&gt;</span>Center Alignment<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-r"</span>&gt;</span>Right Alignment<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"type--reset"</span>&gt;</span>Reset margin &amp; line height<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
     </div>
   </section>
-  <section class="pv-4 ph-2">
+  <section id="Buttons" class="pv4 ph2">
     <div class="container--s">
       <h2 class="medium">Buttons</h2>
       <p>Buttons are sized using <code>em</code>, so creating different sized buttons is as easy as applying a different type scale class.</p>
-<div class="demo px-2 mt-2">
-  <button class="h2 uppercase mv-05">Click Me</button>
+<div class="demo px2 mt2">
+  <button class="h2 uppercase mv05">Click Me</button>
   <br>
-  <button class="h4 uppercase mv-05">Click Me</button>
+  <button class="h4 uppercase mv05">Click Me</button>
   <br>
-  <button class="h6 uppercase mv-05">Click Me</button>
+  <button class="h6 uppercase mv05">Click Me</button>
 </div>
-<pre><code>&lt;button class=&quot;h2 uppercase mv-05&quot;&gt;Click Me&lt;/button&gt;
-&lt;button class=&quot;h4 uppercase mv-05&quot;&gt;Click Me&lt;/button&gt;
-&lt;button class=&quot;h6 uppercase mv-05&quot;&gt;Click Me&lt;/button&gt;
-</code></pre>
-
-    </div>
-  </section>
-  <section class="pv-4 ph-2">
-    <div class="container--s">
-      <h2 class="medium">Widths</h2>
-      <p>Use utility width classes throughout your markup, or to define custom grids on the fly.</p>
-<div class="demo px-2 clear align-c">
-  <div class="col-3 px-1 mb-1 bg-c-g1 c-g">25%</div>
-  <div class="col-4 px-1 mv-1 bg-c-g2 c-w">33%</div>
-  <div class="col-6 px-1 mv-1 bg-c-g3 c-w">50%</div>
-  <div class="col-8 px-1 mv-1 bg-c-g c-w">67%</div>
-  <div class="col-9 px-1 mv-1 bg-c-b c-w">75%</div>
-  <div class="col-12 px-1 mt-1 bg-c-g c-w">100%</div>
-</div>
-<pre><code>&lt;div class=&quot;col-3 px-1 mb-1 bg-c-g1 c-g&quot;&gt;25%&lt;/div&gt;
-&lt;div class=&quot;col-4 px-1 mv-1 bg-c-g2 c-w&quot;&gt;33%&lt;/div&gt;
-&lt;div class=&quot;col-6 px-1 mv-1 bg-c-g3 c-w&quot;&gt;50%&lt;/div&gt;
-&lt;div class=&quot;col-8 px-1 mv-1 bg-c-g c-w&quot;&gt;67%&lt;/div&gt;
-&lt;div class=&quot;col-9 px-1 mv-1 bg-c-b c-w&quot;&gt;75%&lt;/div&gt;
-&lt;div class=&quot;col-12 px-1 mt-1 bg-c-g c-w&quot;&gt;100%&lt;/div&gt;
-</code></pre>
-
-    </div>
-  </section>
-  <section class="pv-4 ph-2">
-    <div class="container--s">
-      <h2 class="medium">Containers &amp; Grids</h2>
-      <p>There is no set grid defined in Svbstrate. Instead, use container classes, the clearfix utility, and column classes to define grids on the fly.</p>
-<div class="demo px-2 clear align-c col-12">
-  <div class="clear">
-  <div class="float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-3_l</div></div>
-  <div class="float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-3_l</div></div>
-  <div class="float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g3 c-w">col-6 col-3_l</div></div>
-  <div class="float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g c-w">col-6 col-3_l</div></div>
-  <div class="float-l mv-1 col-6 col-4_m"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-4_m</div></div>
-  <div class="float-l mv-1 col-6 col-4_m"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-4_m</div></div>
-  <div class="float-l mv-1 col-12 col-4_m"><div class="px-1 mx-0 bg-c-g3 c-w">col-12 col-4_m</div></div>
-  <div class="float-l mv-1 col-12 col-6_m"><div class="px-1 mx-0 bg-c-g1 c-g">col-12 col-6_m</div></div>
-  <div class="float-l mv-1 col-12 col-6_m"><div class="px-1 mx-0 bg-c-g2 c-w">col-12 col-6_m</div></div>
-  <div class="float-l mv-1 col-6 col-8_l"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-8_l</div></div>
-  <div class="float-l mv-1 col-6 col-4_l"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-4_l</div></div>
-  </div>
-</div>
-<pre><code>&lt;div class=&quot;col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;col-6 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;col-6 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;col-12 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;col-12 col-6_m float-l mv-1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;col-12 col-6_m float-l mv-1&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;col-6 col-8_l float-l mv-1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;col-6 col-4_l float-l mv-1&quot;&gt;&lt;/div&gt;
-</code></pre>
-<p class="mt-2">To add a gutter, use spacing utilities, combined with a offset 'row' element:</p>
-<div class="demo px-2 clear align-c col-12">
-  <div class="mhn-1 clear">
-  <div class="ph-1 float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-3_l</div></div>
-  <div class="ph-1 float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-3_l</div></div>
-  <div class="ph-1 float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g3 c-w">col-6 col-3_l</div></div>
-  <div class="ph-1 float-l mv-1 col-6 col-3_l"><div class="px-1 mx-0 bg-c-g c-w">col-6 col-3_l</div></div>
-  <div class="ph-1 float-l mv-1 col-6 col-4_m"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-4_m</div></div>
-  <div class="ph-1 float-l mv-1 col-6 col-4_m"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-4_m</div></div>
-  <div class="ph-1 float-l mv-1 col-12 col-4_m"><div class="px-1 mx-0 bg-c-g3 c-w">col-12 col-4_m</div></div>
-  <div class="ph-1 float-l mv-1 col-12 col-6_m"><div class="px-1 mx-0 bg-c-g1 c-g">col-12 col-6_m</div></div>
-  <div class="ph-1 float-l mv-1 col-12 col-6_m"><div class="px-1 mx-0 bg-c-g2 c-w">col-12 col-6_m</div></div>
-  <div class="ph-1 float-l mv-1 col-6 col-8_l"><div class="px-1 mx-0 bg-c-g1 c-g">col-6 col-8_l</div></div>
-  <div class="ph-1 float-l mv-1 col-6 col-4_l"><div class="px-1 mx-0 bg-c-g2 c-w">col-6 col-4_l</div></div>
-  </div>
-</div>
-<pre><code>&lt;div class=&quot;mhn-1 clear&quot;&gt;
-  &lt;div class=&quot;ph-1 col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;ph-1 col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;ph-1 col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;ph-1 col-6 col-3_l float-l mv-1&quot;&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;ph-1 col-6 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;ph-1 col-6 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;ph-1 col-12 col-4_m float-l mv-1&quot;&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;ph-1 col-12 col-6_m float-l mv-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;ph-1 col-12 col-6_m float-l mv-1&quot;&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;ph-1 col-6 col-8_l float-l mv-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;ph-1 col-6 col-4_l float-l mv-1&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2 uppercase mv05"</span>&gt;</span>Click Me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h4 uppercase mv05"</span>&gt;</span>Click Me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h6 uppercase mv05"</span>&gt;</span>Click Me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 </code></pre>
 
     </div>
