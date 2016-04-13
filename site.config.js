@@ -1,10 +1,10 @@
 module.exports = {
   meta: {
     version: "0.9.0",
-    title: "Svbstrate",
+    title: "Svbstrate - A simble scalable SCSS base-layer.",
     url: "http://estrattonbailey.com/svbstrate-site",
     author: "@estrattonbailey",
-    description: "A simple, scalable CSS base-layer.",
+    description: "A simple, scalable SCSS base-layer.",
     keywords: "css, scss",
     og_img: "/"
   },
