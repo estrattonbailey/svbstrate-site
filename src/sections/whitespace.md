@@ -1,6 +1,6 @@
 Svbstrate includes whitespace classes out of the box, but these should be configured or removed on a per project basis. They use a syntax first developed by [Tachyons](http://tachyons.io/) and [BASSCSS](http://www.basscss.com/):
 
-<table class="mt-2 no-padding">
+<table class="mt2 no-padding">
   <tr>
     <th class="bold">Prefix</th>
     <th class="bold">Description</th>
@@ -39,12 +39,16 @@ Svbstrate includes whitespace classes out of the box, but these should be config
   </tr>
   <tr>
     <td>n</td>
-    <td>negative</td>
+    <td>negative (margin only)</td>
   </tr>
 
   <tr>
     <th class="bold">Suffix</th>
     <th class="bold">Scale</th>
+  </tr>
+  <tr>
+    <td>a</td>
+    <td>auto (margin only)</td>
   </tr>
   <tr>
     <td>0</td>
@@ -84,22 +88,22 @@ Svbstrate includes whitespace classes out of the box, but these should be config
   </tr>
 </table>
 
-<p class="mt-4 mb-1">The prefixes and suffixes above combine to define classes like these:</p>
+<p class="mt4 mb1">The prefixes and suffixes above combine to define classes like these:</p>
 
 ```css
-.mx-0 {
+.mx0 {
   margin: 0; 
 }
-.mhn-2 {
+.mhn2 {
   margin-left: -2em; 
   margin-right: -2em; 
 }
 
-pv-4 {
+.pv4 {
   padding-top: 4em;
   padding-bottom: 4em;
 }
-.pt-075 {
+.pt075 {
   margin-top: 0.75em;  
 }
 ```

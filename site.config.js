@@ -18,12 +18,12 @@ module.exports = {
       content: "src/sections/whitespace.md"
     },
     {
-      title: "Typography",
-      content: "src/sections/typography.md"
+      title: "Display & Positioning",
+      content: "src/sections/display.md"
     },
     {
-      title: "Buttons",
-      content: "src/sections/buttons.md"
+      title: "Breakpoints",
+      content: "src/sections/breakpoints.md"
     },
     {
       title: "Widths",
@@ -32,6 +32,14 @@ module.exports = {
     {
       title: "Containers & Grids",
       content: "src/sections/grids.md"
+    },
+    {
+      title: "Typography",
+      content: "src/sections/typography.md"
+    },
+    {
+      title: "Buttons",
+      content: "src/sections/buttons.md"
     }
   ]
 }

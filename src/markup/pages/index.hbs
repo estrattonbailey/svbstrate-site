@@ -1,16 +1,24 @@
-<section class="pt-8 ph-2">
+<section class="pt8 ph2">
   <div class="container--s">
     <header class="clear">
       <h1 class="h2 bold float-l">Svbstrate</h1>
       <p class="c-theme float-r">v{{meta.version}}</p>
+      <hr>
+      <p class="mt1">Svbstrate is a base set of atomic styles suitable for any project. What is here is easily configurable to suit your needs, and since it's built on SASS, it's easy to extend and build on.</p>
     </header>
-    <hr>
-    <p class="mt-1">Svbstrate is a base set of atomic styles suitable for any project. What is here is easily configurable to suit your needs, and since it's built on SASS, it's easy to extend and build on.</p>
+    <h4 class="bold mt2 cg3">Table of Contents</h4>
+    <ul class="toc mb2 list--reset">
+      {{#each sections}}
+        <li class="relative pv05">
+          <a href="#{{handleize title}}" class="toc__link inline-relative"><h3 class="medium mx0">{{title}}</h3></a>
+        </li>
+      {{/each}}
+    </ul>
   </div>
 </section>
 
 {{#each sections}}
-  <section class="pv-4 ph-2">
+  <section id="{{handleize title}}" class="pv4 ph2">
     <div class="container--s">
       <h2 class="medium">{{title}}</h2>
       {{markdown content}}

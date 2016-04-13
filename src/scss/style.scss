@@ -1,12 +1,22 @@
 // @import "../../node_modules/svbstrate/_svbstrate";
 @import "../../../svbstrate/src/_svbstrate.scss";
 
+// @import "highlighting/google";
+@import "highlighting/solarized-light";
+
+html, body {
+  font-size: 85%;
+  @media (min-width: break(600)){
+    font-size: 100%; 
+  }
+}
+
 a {
-  color: $c-theme;
+  color: $c1;
 }
 
 .demo {
-  border: 1px solid $c-g1;
+  border: 1px solid $cg1;
 
   & + .pre,
   & + .demo {
@@ -14,9 +24,44 @@ a {
   }
 }
 
+code {
+  padding: 0.2em .4em;
+  background-color: $cg1;
+}
+
 pre {
-  @extend .px-1;
+  @extend .px2;
   @extend .p;
   margin: 0;
-  border: 1px solid $c-g1;
+  border: 1px solid $cg1;
+  background-color: $cg1;
+  overflow: auto;
+
+  code {
+    background-color: transparent;
+    padding: 0;
+    min-width: 500px;
+  }
+}
+
+.toc {
+  
+}
+.toc__link {
+  color: $cb;
+
+  &:hover::after {
+    opacity: 0;
+  }
+
+  &::after {
+    content:'';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0; bottom: -2px;
+    height: 2px;
+    background-color: $c1;
+    opacity: 0.5;
+  }
 }
