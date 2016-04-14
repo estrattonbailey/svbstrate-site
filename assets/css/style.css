@@ -124,6 +124,9 @@ select {
 .static {
   position: static; }
 
+.hide {
+  display: none; }
+
 .col-3 {
   width: 25%; }
 
@@ -988,7 +991,7 @@ button {
   border: 0;
   color: white;
   cursor: pointer;
-  padding: .6em 1.7em;
+  padding: 0.7em 2em;
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none; }
@@ -1212,8 +1215,17 @@ html, body {
     html, body {
       font-size: 100%; } }
 
+h1, h2, h3, h4, h5, h6, p,
+.h1, .h2, .h3, .h4, .h5, .h6, .p, table,
+.table, pre {
+  font-weight: 400; }
+
 a {
   color: #148ECC; }
+
+.icon {
+  height: 1.1rem;
+  width: 1.1rem; }
 
 .demo {
   border: 1px solid #f5f5f5; }
