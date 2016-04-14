@@ -10,9 +10,18 @@ html, body {
     font-size: 100%; 
   }
 }
+h1, h2, h3, h4, h5, h6, p,
+.h1, .h2, .h3, .h4, .h5, .h6, .p {
+	font-weight: 400;
+}
 
 a {
   color: $c1;
+}
+
+.icon {
+  height: 1.1rem;
+  width: 1.1rem;
 }
 
 .demo {
@@ -44,9 +53,6 @@ pre {
   }
 }
 
-.toc {
-  
-}
 .toc__link {
   color: $cb;
 
